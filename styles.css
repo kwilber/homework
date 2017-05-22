@@ -1,0 +1,117 @@
+.block {
+  display: block;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.hide {
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+
+
+body {
+  font-size: 12px;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+#user-data {
+  margin-top: 20px;
+  transition: opacity 1s ease-out;
+}
+.modal {
+  width: 85%;
+  max-width: 750px;
+  border: 1px solid #ccc;
+  border-radius: 3px
+}
+.modal input {
+  width: 100%;
+}
+.modal input,
+.modal select {
+  margin: 20px 0;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
+  color: rgba(0, 0, 0, .75);
+  font-size: .875em;
+  margin: 0 0 1em;
+  padding: .5em;
+  height: 2.3125em;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: -webkit-box-shadow .45s, border-color .45s ease-in-out;
+  -moz-transition: -moz-box-shadow .45s, border-color .45s ease-in-out;
+  transition: box-shadow .45s, border-color .45s ease-in-out;
+}
+.modal input[placeholder="Zip Code"] {
+  width: 50%;
+}
+.modal select {
+  width: 48%;
+  margin-right: .5%;
+  padding-right: 0;
+}
+#email-error {
+  color: red;
+}
+.left-rail {
+  float: left;
+  width: 50%;
+}
+.right-rail {
+  float: left;
+  width: 50%;
+}
+.right-rail img {
+  width: 100%;
+  max-width: 250px;
+  display: block;
+  margin: 4px auto 5px;
+}
+#close-modal {
+  text-align: right;
+  cursor: pointer;
+}
+.button {
+  padding: .75em 1em;
+}
+.button,
+.modal input.button {
+  background-color: #ff851f;
+  border-color: #e56800;
+  color: #fff;
+  font-size: .8125em;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  font-weight: 700;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, .25) inset;
+  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, .25) inset;
+  text-decoration: none;
+  width: auto;
+}
+@media screen and (max-width: 767px) {
+  .modal input[placeholder="Zip Code"] {
+    width: 100%;
+  }
+  
+  .modal select {
+    width: 100%;
+  }
+}
